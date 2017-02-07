@@ -1,7 +1,7 @@
 (function() {
 	
 	angular
-		.module('tutorialCtrl')
+		.module('tutorialApp')
 		.controller("tutorialCtrl", function($scope){
 
 			$scope.tutorialObject = {};
@@ -12,5 +12,5 @@
 			$scope.tutorialObject.bindOutput *= 2;
 	}
 });
-
+		
 })();
