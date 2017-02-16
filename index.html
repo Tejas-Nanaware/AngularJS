@@ -5,7 +5,10 @@
 	<title>Register Page</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/demo.css">
+  <script src="app.js"></script>
 </head>
 <body bgcolor="#cccccc">
 	<nav class="navbar navbar-inverse">
@@ -44,8 +47,8 @@
     <h2>Register Here</h2>
     <hr width="60%">
     <div class="form-group">
-	<form id="RegForm" action="demo.php" method="POST" autocomplete="ON" align="center">
-		<fieldset>
+	<form class="RegForm" action="www.google.com" method="POST" autocomplete="ON" align="center">
+		<fieldset class="autoFillLogic">
 			FamilyID:<input type="text" placeholder="Enter Family Id" name="famID"><br>
 			JobCardID:<input type="text" placeholder="Enter Job Card Id" name="jobID"><br>
 		</fieldset>
@@ -60,6 +63,7 @@
 			<INPUT TYPE="Radio" Name="Gender" Value="Female">Female
 			<INPUT TYPE="Radio" Name="Gender" Value="Other">Other
 			<br>Age:<input type="number" name="age">
+      <input type="button" name="login" value="Login">
 		</form>
 </div>
 </form>
