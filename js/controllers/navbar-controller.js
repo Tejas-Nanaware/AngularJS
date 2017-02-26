@@ -1,28 +1,44 @@
 angular
     .module('rozgaar')
-    .controller('navbar-controller'[$scope, function($scope){
-        $scope.navabrBrand=[
+    .controller('navbar-controller',['$scope', function($scope){
+        console.log("entered");
+        $scope.navabarBrand=[
             {
-                option: 'ROZGAAR',
+                optionText: 'ROZGAAR',
             }
         ];
         $scope.navbarItems=[
             {
-                option: 'Home',
+                optionText: 'Home',
             },
             {
-                option: 'MNREGA',
+                optionText: 'MNREGA',
             },
             {
-                option: 'About Us',
+                optionText: 'About Us',
+            },
+			{
+                optionLink: 'index.html',
+            },
+            {
+                optionLink: 'www.nrega.nic.in/',
+            },
+            {
+                optionLink: 'codestrike.in',
             },
         ];
         $scope.navbarRight=[
             {
-                option:'Register',
+                optionText:' Register',
             },
             {
-                option:'Login',
+                optionText:' Login',
             },
+			{
+				glyph:'user',
+			},
+			{
+				glyph:'log-in',
+			},
         ];
     }]);
