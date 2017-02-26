@@ -1,7 +1,6 @@
 angular
     .module('rozgaar')
     .controller('navbar-controller',['$scope', function($scope){
-        console.log("entered");
         $scope.navabarBrand=[
             {
                 optionText: 'ROZGAAR',
@@ -29,16 +28,16 @@ angular
         ];
         $scope.navbarRight=[
             {
-                optionText:' Register',
-            },
-            {
-                optionText:' Login',
-            },
-			{
 				glyph:'user',
 			},
 			{
+                optionText:" Register",
+            },
+			{
 				glyph:'log-in',
 			},
+            {
+                optionText:" Login",
+            },
         ];
     }]);

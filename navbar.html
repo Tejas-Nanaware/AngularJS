@@ -22,11 +22,11 @@
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
         <li class="active" ng-repeat="option in navbarItems">
-          <a href="{{option.optionLink}}">{{option.optionText}}</a>
+          <a href="{{option.optionlink}}">{{option.optionText}}</a>
         </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li class='active' ng-repeat="option in navbarRight"><span class="glyphicon glyphicon-{{option.glyph}}"><a href=#>{{option.optionText}}</a></span></li>
+        <li ng-repeat="option in navbarRight"><span class="glyphicon glyphicon-{{option.glyph}}"><a href="#">{{option.optionText}}</a></span></li>
         <!--<li><a href="register.html"><span class="glyphicon glyphicon-user"></span> Register</a></li>
         <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>-->
       </ul>
