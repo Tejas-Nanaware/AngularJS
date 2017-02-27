@@ -4,7 +4,7 @@ angular
 ['$scope', '$location', function ($scope, $location) {
     $scope.navClass = function (page) {
         var currentRoute = $location.path().substring(1) || 'home';
-        console.log(currentRoute);
+        //console.log(currentRoute);
         $('.navbar-collapse a').click(function(){
             $(".navbar-collapse").collapse('hide');
             return page === currentRoute ? 'active' : '';
