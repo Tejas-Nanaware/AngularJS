@@ -17,6 +17,11 @@ var app = angular
       templateUrl:    'contact.html',
       controller:     'ContactCtrl'
     });
+    $routeProvider.when('/Register',
+    {
+      templateUrl:    'register.html',
+      controller:     'RegisterCtrl'
+    });
     $routeProvider.otherwise(
     {
       redirectTo:     '/Home',

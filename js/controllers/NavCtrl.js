@@ -22,4 +22,8 @@ angular
     $scope.loadContact = function () {
         $location.url('/Contact');
     };
+
+    $scope.loadRegister = function () {
+        $location.url('/Register');
+    };
 }]);
